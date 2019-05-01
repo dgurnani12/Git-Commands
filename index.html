@@ -1,0 +1,186 @@
+<h1 id="git-commands">Git Commands</h1>
+<p><em>A list of my commonly used Git commands</em></p>
+<p>--</p>
+<h3 id="getting-creating-projects">Getting &amp; Creating Projects</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>git init</code></td>
+<td align="left">Initialize a local Git repository</td>
+</tr>
+<tr class="even">
+<td align="left"><code>git clone ssh://git@github.com/[username]/[repository-name].git</code></td>
+<td align="left">Create a local copy of a remote repository</td>
+</tr>
+</tbody>
+</table>
+<h3 id="basic-snapshotting">Basic Snapshotting</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>git status</code></td>
+<td align="left">Check status</td>
+</tr>
+<tr class="even">
+<td align="left"><code>git add [file-name.txt]</code></td>
+<td align="left">Add a file to the staging area</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>git add -A</code></td>
+<td align="left">Add all new and changed files to the staging area</td>
+</tr>
+<tr class="even">
+<td align="left"><code>git commit -m &quot;[commit message]&quot;</code></td>
+<td align="left">Commit changes</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>git rm -r [file-name.txt]</code></td>
+<td align="left">Remove a file (or folder)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="branching-merging">Branching &amp; Merging</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>git branch</code></td>
+<td align="left">List branches (the asterisk denotes the current branch)</td>
+</tr>
+<tr class="even">
+<td align="left"><code>git branch -a</code></td>
+<td align="left">List all branches (local and remote)</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>git branch [branch name]</code></td>
+<td align="left">Create a new branch</td>
+</tr>
+<tr class="even">
+<td align="left"><code>git branch -d [branch name]</code></td>
+<td align="left">Delete a branch</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>git push origin --delete [branch name]</code></td>
+<td align="left">Delete a remote branch</td>
+</tr>
+<tr class="even">
+<td align="left"><code>git checkout -b [branch name]</code></td>
+<td align="left">Create a new branch and switch to it</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>git checkout -b [branch name] origin/[branch name]</code></td>
+<td align="left">Clone a remote branch and switch to it</td>
+</tr>
+<tr class="even">
+<td align="left"><code>git checkout [branch name]</code></td>
+<td align="left">Switch to a branch</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>git checkout -</code></td>
+<td align="left">Switch to the branch last checked out</td>
+</tr>
+<tr class="even">
+<td align="left"><code>git checkout -- [file-name.txt]</code></td>
+<td align="left">Discard changes to a file</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>git merge [branch name]</code></td>
+<td align="left">Merge a branch into the active branch</td>
+</tr>
+<tr class="even">
+<td align="left"><code>git merge [source branch] [target branch]</code></td>
+<td align="left">Merge a branch into a target branch</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>git stash</code></td>
+<td align="left">Stash changes in a dirty working directory</td>
+</tr>
+<tr class="even">
+<td align="left"><code>git stash clear</code></td>
+<td align="left">Remove all stashed entries</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sharing-updating-projects">Sharing &amp; Updating Projects</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>git push origin [branch name]</code></td>
+<td align="left">Push a branch to your remote repository</td>
+</tr>
+<tr class="even">
+<td align="left"><code>git push -u origin [branch name]</code></td>
+<td align="left">Push changes to remote repository (and remember the branch)</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>git push</code></td>
+<td align="left">Push changes to remote repository (remembered branch)</td>
+</tr>
+<tr class="even">
+<td align="left"><code>git push origin --delete [branch name]</code></td>
+<td align="left">Delete a remote branch</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>git pull</code></td>
+<td align="left">Update local repository to the newest commit</td>
+</tr>
+<tr class="even">
+<td align="left"><code>git pull origin [branch name]</code></td>
+<td align="left">Pull changes from remote repository</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>git remote add origin ssh://git@github.com/[username]/[repository-name].git</code></td>
+<td align="left">Add a remote repository</td>
+</tr>
+<tr class="even">
+<td align="left"><code>git remote set-url origin ssh://git@github.com/[username]/[repository-name].git</code></td>
+<td align="left">Set a repository's origin branch to SSH</td>
+</tr>
+</tbody>
+</table>
+<h3 id="inspection-comparison">Inspection &amp; Comparison</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Command</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><code>git log</code></td>
+<td align="left">View changes</td>
+</tr>
+<tr class="even">
+<td align="left"><code>git log --summary</code></td>
+<td align="left">View changes (detailed)</td>
+</tr>
+<tr class="odd">
+<td align="left"><code>git diff [source branch] [target branch]</code></td>
+<td align="left">Preview changes before merging</td>
+</tr>
+</tbody>
+</table>
