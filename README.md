@@ -1,7 +1,10 @@
 Git Commands
 ============
 
-_A list of my commonly used Git commands_
+http://git.dineshgurnani.com
+http://www.git.dineshgurnani.com
+
+_A list of my commonly used Git commands 
 --
 
 ### Getting & Creating Projects
