@@ -3,6 +3,7 @@ Git Commands
 
 http://git.dineshgurnani.com
 http://www.git.dineshgurnani.com
+http://git.dineshgurnani.xyz
 
 _A list of my commonly used Git commands 
 --
